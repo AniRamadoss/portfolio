@@ -26,7 +26,6 @@ export default function SocialsBar(SocialsBarProps: {}) {
 				label="GitHub"
 				icon={<GitHubIcon />}
 				component={Link}
-				href="https://github.com/AniRamadoss"
 				target="_blank"
 				onClick={() =>
 					handleNavigation("https://github.com/AniRamadoss")
@@ -37,7 +36,6 @@ export default function SocialsBar(SocialsBarProps: {}) {
 				label="LinkedIn"
 				icon={<LinkedInIcon />}
 				component={Link}
-				href="https://www.linkedin.com/in/aniramadoss/"
 				target="_blank"
 				rel="noopener noreferrer"
 				onClick={() =>
@@ -49,7 +47,6 @@ export default function SocialsBar(SocialsBarProps: {}) {
 				label="Instagram"
 				icon={<InstagramIcon />}
 				component={Link}
-				href="https://www.instagram.com/therealaniramadoss/"
 				target="_blank"
 				rel="noopener noreferrer"
 				onClick={() =>
