@@ -1,12 +1,18 @@
-.imageContainer {
-    width: 200px; /* Set a width for the container */
-    height: 200px; /* Set a height for the container */
-    position: relative;
-  }
   
   .rotatingImage {
     animation: rotate 5s infinite linear; /* Apply the rotate animation */
   }
+
+  .cdCircle {
+  width: 45px; /* Adjust the size of the CD circle */
+  height: 45px; /* Adjust the size of the CD circle */
+  border-radius: 50%; /* Make it a circle shape */
+  background-color: lightblue; /* Set the background color */
+  position: absolute; /* Position it relative to the container */
+  top: 50%; /* Position it in the center vertically */
+  left: 50%; /* Position it in the center horizontally */
+  transform: translate(-50%, -50%); /* Center it precisely */
+}
   
   @keyframes rotate {
     0% {

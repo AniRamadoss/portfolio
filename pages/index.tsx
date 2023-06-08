@@ -4,8 +4,8 @@ import Image from "next/image";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import muscleUp from "../muscle_up.gif";
-// import dragonSquat from "../dragon_squat.gif";
+import muscleUp from "../muscle_up.gif";
+import dragonSquat from "../dragon_squat.gif";
 import MyAppBar from "../components/MyAppBar";
 import Head from "next/head";
 import Page from "../components/Page";
@@ -57,75 +57,6 @@ export default function Home(): JSX.Element {
 						>
 							<CardContent>
 								<Typography variant="h4" gutterBottom>
-									Calisthenics Athlete
-								</Typography>
-								<div
-									style={{
-										display: "flex",
-										alignItems: "center",
-									}}
-								>
-									<div
-										style={{
-											display: "flex",
-											flexDirection: "column",
-											marginRight: "10px",
-										}}
-									>
-										{/* <Image
-											src={muscleUp}
-											alt="muscleUp"
-											width={167}
-											height={300}
-										/> */}
-										<figcaption
-											style={{
-												marginTop: "5px",
-												textAlign: "center",
-											}}
-										>
-											Muscle Up
-										</figcaption>
-									</div>
-
-									<div
-										style={{
-											display: "flex",
-											flexDirection: "column",
-										}}
-									>
-										{/* <Image
-											src={dragonSquat}
-											alt="dragonSquat"
-											width={167}
-											height={300}
-										/> */}
-										<figcaption
-											style={{
-												marginTop: "5px",
-												textAlign: "center",
-											}}
-										>
-											Dragon Squat
-										</figcaption>
-									</div>
-								</div>
-							</CardContent>
-						</Card>
-					</div>
-					<div
-						style={{
-							display: "flex",
-							margin: "10px",
-							justifyContent: "center",
-						}}
-					>
-						<Card
-							sx={{ maxWidth: 700, backgroundColor: "#3399FF" }}
-							variant="outlined"
-						>
-							<CardContent>
-								<Typography variant="h4" gutterBottom>
 									Software Engineer
 								</Typography>
 								<Typography variant="h7" gutterBottom>
@@ -139,14 +70,13 @@ export default function Home(): JSX.Element {
 									style={{
 										display: "flex",
 										alignItems: "center",
+										justifyContent: "center",
 									}}
 								>
 									<div
 										style={{
 											display: "flex",
 											flexDirection: "column",
-											marginRight: "10px",
-											padding: "10px",
 										}}
 									>
 										<Image
@@ -193,16 +123,86 @@ export default function Home(): JSX.Element {
 						>
 							<CardContent>
 								<Typography variant="h4" gutterBottom>
-									Music Listener
+									Calisthenics Athlete
 								</Typography>
-								
 								<div
 									style={{
 										display: "flex",
 										alignItems: "center",
 									}}
 								>
-									<MusicComponent/>
+									<div
+										style={{
+											display: "flex",
+											flexDirection: "column",
+											marginRight: "10px",
+										}}
+									>
+										<Image
+											src={muscleUp}
+											alt="muscleUp"
+											width={167}
+											height={300}
+										/>
+										<figcaption
+											style={{
+												marginTop: "5px",
+												textAlign: "center",
+											}}
+										>
+											Muscle Up
+										</figcaption>
+									</div>
+
+									<div
+										style={{
+											display: "flex",
+											flexDirection: "column",
+										}}
+									>
+										<Image
+											src={dragonSquat}
+											alt="dragonSquat"
+											width={167}
+											height={300}
+										/>
+										<figcaption
+											style={{
+												marginTop: "5px",
+												textAlign: "center",
+											}}
+										>
+											Dragon Squat
+										</figcaption>
+									</div>
+								</div>
+							</CardContent>
+						</Card>
+					</div>
+
+					<div
+						style={{
+							display: "flex",
+							margin: "10px",
+							justifyContent: "center",
+						}}
+					>
+						<Card
+							sx={{ maxWidth: 1200, backgroundColor: "#3399FF" }}
+							variant="outlined"
+						>
+							<CardContent>
+								<Typography variant="h4" gutterBottom>
+									Music Listener
+								</Typography>
+
+								<div
+									style={{
+										display: "flex",
+										alignItems: "center",
+									}}
+								>
+									<MusicComponent />
 									<div
 										style={{
 											display: "flex",
@@ -210,9 +210,7 @@ export default function Home(): JSX.Element {
 											marginRight: "10px",
 											padding: "10px",
 										}}
-									>
-										{/* <MusicComponent/> */}
-									</div>
+									></div>
 								</div>
 							</CardContent>
 						</Card>
